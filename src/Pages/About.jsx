@@ -11,6 +11,8 @@ import { ReactComponent as JavascriptIcon } from "../assets/icons/Javascript.svg
 import { ReactComponent as TypescriptIcon } from "../assets/icons/Typescript.svg";
 import { ReactComponent as Gsap } from "../assets/icons/Gsap.svg";
 import { ReactComponent as Cplusplus } from "../assets/icons/C++.svg";
+import { ReactComponent as Css } from "../assets/icons/css.svg";
+import { ReactComponent as Html } from "../assets/icons/html.svg";
 import Timeline from "../Content/Timeline";
 
 const About = () => {
@@ -24,11 +26,11 @@ const About = () => {
   }, []);
   const skills = [
     {
-      img: <ReactIcon width="38" height="38" />,
+      img: <Css width="38" height="38" />,
       text: "Css",
     },
     {
-      img: <ReactIcon width="38" height="38" />,
+      img: <Html width="38" height="38" />,
       text: "HTML",
     },
     {
