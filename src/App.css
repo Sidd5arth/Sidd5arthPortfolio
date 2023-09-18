@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+    font-family: 'Integral';
+    src:url('./assets/fonts/IntegralCF-Regular.woff') format('woff');
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@font-face {
+    font-family: 'Argentum';
+    src:url('./assets/fonts/ArgentumSans-Regular.woff') format('woff');
   }
-  to {
-    transform: rotate(360deg);
+:root{
+    --white:#f2f5f3;
+    --black:#262c34;
+    --blue: #2A85EF;
+}
+.nav-icon{
+    color: #262c34;
+    height: 2em;
+    width: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0,-0.01,0,.77);
+} 
+.nav-icon:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    height: 200%;
+    width: 200%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40%;
+    animation: spin 1s cubic-bezier(0,-0.01,0,.77) 1;
+    mix-blend-mode:difference;
+    rotate: 180deg;
+}
+
+  @keyframes spin {
+    0% {
+        transform: translateY(-100%) rotate(360deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
   }
+
+.Leetcode-img{
+    background-image: url(../src/assets/icons/Leetcode.svg);
+}
+.Behance-img{
+    background-image: url(../src/assets/icons/Behance.svg);
+}
+.Github-img{
+    background-image: url(../src/assets/icons/Github.svg);
+}
+.Linkedin-img{
+    background-image: url(../src/assets/icons/Linkedin.svg);
+}
+.h-sec{
+    display: flex;
+    flex-direction: row;
 }

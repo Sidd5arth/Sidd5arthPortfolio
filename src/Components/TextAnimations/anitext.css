@@ -1,0 +1,17 @@
+.ani-text{
+    font-size: 9em;
+    line-height: 1em;
+    width: 100%;
+    text-align: center;
+    padding: 0.8em 1em;
+    color: var(--black);
+    /* border: 2px solid red; */
+    font-family: "Integral";
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+.text-mask{
+    overflow: hidden;
+}

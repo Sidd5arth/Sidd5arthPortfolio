@@ -1,0 +1,16 @@
+.bck{
+    height: 100vh;
+    overflow-y: scroll;
+    background: radial-gradient(circle, rgba(42,133,239,1) 0%, rgb(22, 25, 32) 55%);
+    margin: 0em 0.3em;
+    transform: scale(100%);
+}
+
+.card-grid {
+  margin: 80px 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1fr));
+  gap: 200px;
+  padding: 20px;
+}
+
