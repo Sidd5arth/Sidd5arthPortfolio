@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './work.css';
 import Card from '../Components/Card/Card';
 import gsap from 'gsap';
@@ -17,18 +17,27 @@ import { ReactComponent as ViteIcon } from "../assets/icons/Vite.svg";
 // import {verceli, reacti, tsi, jsi } from "../assets/logo/ssk_logo.png"
 
 const Work = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const  updateScreenWidth = () =>{
 
+  }
+  useEffect(() => {
+    window.addEventListener('resize', updateScreenWidth);
+    return () => {
+      window.addEventListener('resize', updateScreenWidth)
+    }
+  }, [window.innerWidth])
   let p1 = {
     id:0,
     title: "AIR HOMES",
      date: "Live application -> ",
      link:"https://rent-housing-app.vercel.app/",
      tech: [
-      {name:"next.js", img: <NextIcon width ="32" height="32"/>},
-      {name:"react.js", img:<ReactIcon width ="32" height="32"/>},
-      {name:"node.js", img: <NodeIcon width ="32" height="32"/>},
-      {name:"vercel", img: <VercelIcon width ="32" height="32"/>},
-      {name:"typescript", img: <TypescriptIcon width ="32" height="32"/>},
+      {name:"next.js", img: screenWidth > 800 ? <NextIcon width ="32" height="32"/> : <NextIcon width ="24" height="24"/>},
+      {name:"react.js", img:screenWidth > 800 ? <ReactIcon width ="32" height="32"/> : <ReactIcon width ="24" height="24"/>},
+      {name:"node.js", img: screenWidth > 800 ? <NodeIcon width ="32" height="32"/> : <NodeIcon width ="24" height="24"/>},
+      {name:"vercel", img: screenWidth > 800 ? <VercelIcon width ="32" height="32"/> : <VercelIcon width ="24" height="24"/>},
+      {name:"typescript", img: screenWidth > 800 ? <TypescriptIcon width ="32" height="32"/> : <TypescriptIcon width ="24" height="24"/>},
     ],
      video: {v1}
   }
@@ -66,7 +75,6 @@ const Work = () => {
   return (
     <div className='bck'>
           <div className='card-grid'>
-      <p style={{color:"white", fontSize:"2em", textAlign:"center", fontFamily:"Argentum"}}>Scroll in here to see projects</p>
             <Card
             p={p1}
             v={v1}

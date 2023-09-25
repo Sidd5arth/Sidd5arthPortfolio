@@ -1,8 +1,6 @@
 .card-content {
   width: 100%;
-  height: 536px;
   background-color: rgb(66, 66, 66);
-  /* padding: 0.5em; */
   position: relative;
 }
 .video-content {
@@ -99,6 +97,27 @@
   color: var(--black);
   font-family: "Integral";
   letter-spacing: 0.1em;
-  font-size: 0.5em;
+  font-size: 0.4em;
   margin-right: 8px;
+}
+@media screen and (max-width: 1200px) and (min-width: 800px){
+  .card-h {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .tech-text {
+    font-size: 0.3em;
+  }
+  .card-h {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 500px){
+  .tech-text {
+    font-size: 0.3em;
+  }
+  .card-h {
+    font-size: 2em;
+  }
 }

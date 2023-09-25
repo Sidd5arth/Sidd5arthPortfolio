@@ -11,6 +11,9 @@
     --black:#262c34;
     --blue: #2A85EF;
 }
+body{
+    overflow-x: hidden;
+}
 .nav-icon{
     color: #262c34;
     height: 2em;
