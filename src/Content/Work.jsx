@@ -33,11 +33,11 @@ const Work = () => {
      date: "Live application -> ",
      link:"https://rent-housing-app.vercel.app/",
      tech: [
-      {name:"next.js", img: screenWidth > 800 ? <NextIcon width ="32" height="32"/> : <NextIcon width ="24" height="24"/>},
-      {name:"react.js", img:screenWidth > 800 ? <ReactIcon width ="32" height="32"/> : <ReactIcon width ="24" height="24"/>},
-      {name:"node.js", img: screenWidth > 800 ? <NodeIcon width ="32" height="32"/> : <NodeIcon width ="24" height="24"/>},
-      {name:"vercel", img: screenWidth > 800 ? <VercelIcon width ="32" height="32"/> : <VercelIcon width ="24" height="24"/>},
-      {name:"typescript", img: screenWidth > 800 ? <TypescriptIcon width ="32" height="32"/> : <TypescriptIcon width ="24" height="24"/>},
+      {name:"next.js", img: <NextIcon className='svgIcon'/>},
+      {name:"react.js", img:<ReactIcon className='svgIcon'/>},
+      {name:"node.js", img: <NodeIcon className='svgIcon'/>},
+      {name:"vercel", img: <VercelIcon className='svgIcon'/>},
+      {name:"typescript", img: <TypescriptIcon className='svgIcon'/>},
     ],
      video: {v1}
   }
@@ -47,9 +47,9 @@ const Work = () => {
     date: "Live application -> ",
     link:"https://get-se-ostats.vercel.app/",
      tech: [
-      {name:"react.js", img:<ReactIcon width ="32" height="32"/>},
-      {name:"node.js", img: <NodeIcon width ="32" height="32"/>},
-      {name:"vercel", img: <VercelIcon width ="32" height="32"/>},
+      {name:"react.js", img:<ReactIcon className='svgIcon'/>},
+      {name:"node.js", img: <NodeIcon className='svgIcon'/>},
+      {name:"vercel", img: <VercelIcon className='svgIcon'/>},
     ],
   }
   let p3 = {
@@ -58,11 +58,11 @@ const Work = () => {
     title: "Product customizer",
     link:"https://ai-product-customizer.vercel.app/",
      tech: [
-      {name:"react.js", img:<ReactIcon width ="32" height="32"/>},
-      {name:"node.js", img: <NodeIcon width ="32" height="32"/>},
-      {name:"vercel", img: <VercelIcon width ="32" height="32"/>},
-      {name:"Three.js", img: <ThreeJsIcon width ="32" height="32"/>},
-      {name:"Vite.js", img: <ViteIcon width ="32" height="32"/>},
+      {name:"react.js", img:<ReactIcon className='svgIcon'/>},
+      {name:"node.js", img: <NodeIcon className='svgIcon'/>},
+      {name:"vercel", img: <VercelIcon className='svgIcon'/>},
+      {name:"Three.js", img: <ThreeJsIcon className='svgIcon'/>},
+      {name:"Vite.js", img: <ViteIcon className='svgIcon'/>},
     ],
   }
   let p4 = {

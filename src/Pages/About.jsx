@@ -24,55 +24,89 @@ const About = () => {
       type: "heading",
     });
   }, []);
-  const skills = [
+  const developmenrtSkills = [
     {
-      img: <Css width="38" height="38" />,
+      img: <Css className="svgIcon" />,
       text: "Css",
     },
     {
-      img: <Html width="38" height="38" />,
+      img: <Html className="svgIcon" />,
       text: "HTML",
     },
     {
-      img: <JavascriptIcon width="38" height="38" />,
+      img: <JavascriptIcon className="svgIcon" />,
       text: "JavaScript",
     },
     {
-      img: <ReactIcon width="38" height="38" />,
+      img: <ReactIcon className="svgIcon" />,
       text: "react js",
     },
     {
-      img: <NextIcon width="38" height="38" />,
+      img: <NextIcon className="svgIcon" />,
       text: "Next js",
     },
     {
-      img: <TypescriptIcon width="38" height="38" />,
+      img: <TypescriptIcon className="svgIcon" />,
       text: "typeScript",
     },
     {
-      img: <Gsap width="38" height="38" />,
-      text: "gsap",
+      img: <Gsap className="svgIcon" />,
+      text: "Git",
     },
     {
-      img: <Cplusplus width="38" height="38" />,
+      img: <Cplusplus className="svgIcon" />,
       text: "C++",
+    },
+  ];
+  const designSkills = [
+    {
+      img: <Css className="svgIcon" />,
+      text: "Figma",
+    },
+    {
+      img: <Html className="svgIcon" />,
+      text: "After Effects",
+    },
+    {
+      img: <JavascriptIcon className="svgIcon" />,
+      text: "Blender 3d",
+    },
+    {
+      img: <ReactIcon className="svgIcon" />,
+      text: "Adobe Illustrator",
     },
   ];
   return (
     <div className="about-container">
       <div className="about-content">
         <AniText text={text} />
-        <div className="skills-item">
-          {skills.map((skill) => (
-            <div className="skill-container">
-              <div className="skill-img">{skill.img}</div>
-              <div className="skill-text">{skill.text}</div>
+        <div className="skill-all">
+          <div className="skill-set">
+            <h3>Development</h3>
+            <div className="skills-item">
+              {developmenrtSkills.map((skill) => (
+                <div className="skill-container">
+                  <div className="skill-img">{skill.img}</div>
+                  <div className="skill-text">{skill.text}</div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+          <div className="skill-set">
+            <h3>Design</h3>
+            <div className="skills-item">
+              {designSkills.map((skill) => (
+                <div className="skill-container">
+                  <div className="skill-img">{skill.img}</div>
+                  <div className="skill-text">{skill.text}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
       <Background />
-      <Timeline/>
+      <Timeline />
     </div>
   );
 };

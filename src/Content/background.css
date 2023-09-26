@@ -21,7 +21,7 @@
 .container{
     position: absolute;
 }
- @media screen and (max-width: 700px){
+ @media screen and (max-width: 800px){
     .front-display{
         width: 100vw;
     }

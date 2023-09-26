@@ -1,26 +1,11 @@
-import React from "react";
-import Background from "./Background";
-
-function Timeline() {
+import React from 'react'
+import "./timeline.css"
+const Timeline = () => {
   return (
-    <div className="about-container">
-      {/* <div className="front-display">
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-        <div className="rect"></div>
-      </div> */}
-      <div className="about-content"></div>
+    <div className='timeline-container'>
+      {/* yo */}
     </div>
-  );
+  )
 }
 
-export default Timeline;
+export default Timeline

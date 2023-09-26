@@ -44,7 +44,7 @@
   line-height: 1em;
   color: var(--black);
   position: absolute;
-  top: 75%;
+  top: 80%;
 }
 .bottom-h {
   font-family: "Integral";
@@ -55,19 +55,19 @@
   line-height: 1em;
   color: var(--black);
   position: absolute;
-  bottom: -75%;
+  bottom: -80%;
 }
-@media screen and (max-width: 1200px) and (min-width: 800px) {
+@media screen and (max-width: 1300px) and (min-width: 800px) {
   .contents {
     width: calc(100vw - 7.3em);
   }
   .top-h {
     font-size: 7em;
-    top: 82%;
+    top: 83%;
   }
   .bottom-h {
     font-size: 7em;
-    bottom: -82%;
+    bottom: -83%;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 500px) {
@@ -76,11 +76,11 @@
   }
   .top-h {
     font-size: 6em;
-    top: 82%;
+    top: 85%;
   }
   .bottom-h {
     font-size: 6em;
-    bottom: -82%;
+    bottom: -85%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -89,10 +89,10 @@
   }
   .top-h {
     font-size: 4em;
-    top: 87%;
+    top: 90%;
   }
   .bottom-h {
     font-size: 4em;
-    bottom: -87%;
+    bottom: -90%;
   }
 }

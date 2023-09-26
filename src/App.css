@@ -6,6 +6,7 @@
     font-family: 'Argentum';
     src:url('./assets/fonts/ArgentumSans-Regular.woff') format('woff');
   }
+
 :root{
     --white:#f2f5f3;
     --black:#262c34;
@@ -52,15 +53,19 @@ body{
 
 .Leetcode-img{
     background-image: url(../src/assets/icons/Leetcode.svg);
+    background-color: white;
 }
 .Behance-img{
     background-image: url(../src/assets/icons/Behance.svg);
+    background-color: white;
 }
 .Github-img{
     background-image: url(../src/assets/icons/Github.svg);
+    background-color: white;
 }
 .Linkedin-img{
     background-image: url(../src/assets/icons/Linkedin.svg);
+    background-color: white;
 }
 .h-sec{
     display: flex;

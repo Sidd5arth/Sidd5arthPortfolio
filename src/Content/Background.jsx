@@ -12,9 +12,9 @@ const Background = () => {
 
   //   renderer.setSize(window.innerWidth, window.innerHeight);
   //   containerRef.current.appendChild(renderer.domElement);
-  //   renderer.setClearColor(0x000000, 0);
+  //   renderer.setClearColor(0x0000ff, 0);
 
-  //   const geometry = new THREE.BoxGeometry();
+  //   const geometry = new THREE.TorusGeometry();
   //   const material = new THREE.MeshBasicMaterial({
   //     color: 0x00ff00,
   //     transparent: true,
@@ -34,7 +34,7 @@ const Background = () => {
   //     renderer.render(scene, camera);
   //   };
 
-  //   // animate();
+  //   animate();
   // })
   return (
     <>
