@@ -17,16 +17,7 @@ import { ReactComponent as ViteIcon } from "../assets/icons/Vite.svg";
 // import {verceli, reacti, tsi, jsi } from "../assets/logo/ssk_logo.png"
 
 const Work = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const  updateScreenWidth = () =>{
 
-  }
-  useEffect(() => {
-    window.addEventListener('resize', updateScreenWidth);
-    return () => {
-      window.addEventListener('resize', updateScreenWidth)
-    }
-  }, [window.innerWidth])
   let p1 = {
     id:0,
     title: "AIR HOMES",

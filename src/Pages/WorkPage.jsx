@@ -7,7 +7,7 @@ import { gsap, Power2 } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
-const WorkPage = () => {
+const WorkPage = ({setNavis}) => {
   const stopper = useRef();
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -23,6 +23,11 @@ const WorkPage = () => {
             onUpdate: (self) => {
               // Getting the animation's progress
               const progress = self.progress;
+              if(progress > 0.05 && progress <= 0.98){
+                setNavis(true);
+              }else{
+                setNavis(false);
+              }
               if (progress >= 0.6 && stopper.current) {
                 gsap.set(stopper.current, { display: "none" });
               }else{

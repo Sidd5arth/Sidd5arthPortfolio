@@ -5,11 +5,11 @@ import WorkPage from './WorkPage';
 import About from './About';
 // import TimeLinePage from './TimeLinePage';
 
-const Header = () => {
+const Header = ({setNavis}) => {
   return (
     <div className='p-site'>
       <MainPage/>
-      <WorkPage/>
+      <WorkPage setNavis={setNavis}/>
       <About/>
       {/* <TimeLinePage/> */}
     </div>

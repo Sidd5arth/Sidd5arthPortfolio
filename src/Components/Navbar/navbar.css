@@ -1,50 +1,60 @@
-.nav-bar{
-    background-color: white;
+.nav-bar {
+  background-color: white;
+  padding: 1em;
+  width: 6em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
+.padding-nav {
+  background-color: white;
+  padding: 1em;
+  width: 6em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  background-image: url(../../assets/logo/ssk_logo.png);
+  z-index: 100;
+}
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    height: 6em;
+    background-color: transparent;
     padding: 1em;
-    width: 6em;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 100;
-}
-.padding-nav{
-    background-color: white;
-    padding: 1em;
-    width: 6em;
-    height: 100vh;
+    transform: translateX(-10%);
+  }
+  .nav-hide {
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+  .nav-show {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+  .padding-nav {
+    height: 6em;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-}
-.logo{
-    background-image: url(../../assets/logo/ssk_logo.png);
-    z-index: 100;
-}
-@media screen and (max-width: 700px) {
-    .nav-bar{
-        height: 6em;
-        background-color: transparent; 
-        padding: 1em;
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        z-index: 100;
-    }
-    .padding-nav{
-        height: 6em;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-    }
+  }
 }
