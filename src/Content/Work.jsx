@@ -3,9 +3,9 @@ import './work.css';
 import Card from '../Components/Card/Card';
 import gsap from 'gsap';
 import verceli from "../assets/logo/ssk_logo.png"
-import v1 from "../assets/videos/v1.mp4"
-import v2 from "../assets/videos/v2.mp4"
-import v3 from "../assets/videos/v3.mp4"
+import v1 from "../assets/videos/video1.mp4";
+import v2 from "../assets/videos/video2.mp4";
+import v3 from "../assets/videos/video3.mp4";
 import { ReactComponent as NextIcon } from "../assets/icons/Next.svg";
 import { ReactComponent as ReactIcon } from "../assets/icons/React.svg";
 import { ReactComponent as NodeIcon } from "../assets/icons/Node.svg";
