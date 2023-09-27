@@ -13,6 +13,12 @@ import { ReactComponent as Gsap } from "../assets/icons/Gsap.svg";
 import { ReactComponent as Cplusplus } from "../assets/icons/C++.svg";
 import { ReactComponent as Css } from "../assets/icons/css.svg";
 import { ReactComponent as Html } from "../assets/icons/html.svg";
+import { ReactComponent as Figma } from "../assets/icons/Figma.svg";
+import { ReactComponent as Blender } from "../assets/icons/Blender.svg";
+import { ReactComponent as AfterEffects } from "../assets/icons/AfterEffects.svg";
+import { ReactComponent as Illustrator } from "../assets/icons/Illustrator.svg";
+import { ReactComponent as Git } from "../assets/icons/Git.svg";
+
 import Timeline from "../Content/Timeline";
 
 const About = () => {
@@ -50,7 +56,7 @@ const About = () => {
       text: "typeScript",
     },
     {
-      img: <Gsap className="svgIcon" />,
+      img: <Git className="svgIcon" />,
       text: "Git",
     },
     {
@@ -60,19 +66,19 @@ const About = () => {
   ];
   const designSkills = [
     {
-      img: <Css className="svgIcon" />,
+      img: <Figma className="svgIcon" />,
       text: "Figma",
     },
     {
-      img: <Html className="svgIcon" />,
+      img: <AfterEffects className="svgIcon" />,
       text: "After Effects",
     },
     {
-      img: <JavascriptIcon className="svgIcon" />,
+      img: <Blender className="svgIcon" />,
       text: "Blender 3d",
     },
     {
-      img: <ReactIcon className="svgIcon" />,
+      img: <Illustrator className="svgIcon" />,
       text: "Adobe Illustrator",
     },
   ];

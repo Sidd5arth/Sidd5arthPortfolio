@@ -24,11 +24,13 @@
 @media screen and (max-width: 1200px) and (min-width: 800px) {
   .card-grid {
     gap: 6em;
+    margin-top: 7em;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 500px) {
   .card-grid {
     gap: 4em;
+    margin-top: 8em;
   }
   .bck{
     height: 100vh;
@@ -41,6 +43,7 @@
 }
 @media screen and (max-width: 500px){
   .card-grid {
+    margin-top: 10em;
     gap: 4em;
   }
   .bck{
