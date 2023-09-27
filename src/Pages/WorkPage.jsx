@@ -14,7 +14,7 @@ const WorkPage = ({ setNavis }) => {
   const scrollpos = () => {
     const rect = workRef.current.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
-    const threshold = 0.7;
+    const threshold = 0.8;
     
     if (rect.top <= viewportHeight * (1 - threshold) && rect.bottom >= viewportHeight * (1 - threshold)) {
       setNavis(true);
