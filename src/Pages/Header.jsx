@@ -5,10 +5,10 @@ import WorkPage from './WorkPage';
 import About from './About';
 // import TimeLinePage from './TimeLinePage';
 
-const Header = ({setNavis}) => {
+const Header = ({setNavis, navis}) => {
   return (
     <div className='p-site'>
-      <MainPage/>
+      <MainPage navis={navis}/>
       <WorkPage setNavis={setNavis}/>
       <About/>
       {/* <TimeLinePage/> */}

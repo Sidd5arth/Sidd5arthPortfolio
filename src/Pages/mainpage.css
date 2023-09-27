@@ -27,6 +27,14 @@
 .resume-btn:hover{
     padding: 1.8em 8em;
 }
+.resume-btn-hide{
+    opacity: 0;
+    transform: translateY(-40%);
+}
+.resume-btn-show{
+    opacity: 100%;
+    transform: translateY(0%);
+}
 .resume-btn::after{
     content: "";
     background-image: url(../assets/icons/arrow.svg);

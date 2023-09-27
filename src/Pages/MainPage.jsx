@@ -3,7 +3,7 @@ import './mainpage.css'
 import AniText from '../Components/TextAnimations/AniText'
 import Background from '../Content/Background'
 
-const MainPage = () => {
+const MainPage = ({navis}) => {
   const [text, setText] = useState({content:[], type:""});
   useEffect(()=>{
     setText(
@@ -18,7 +18,7 @@ const MainPage = () => {
   return (
     <div className='Col-2'>
        <div className="content">
-        <button className='resume-btn'>RESUME</button>
+        <button className={`resume-btn ${navis ? "resume-btn-hide" : "resume-btn-show"}`}>RESUME</button>
         <AniText
         text = {text}
         />
