@@ -15,10 +15,15 @@ const MainPage = ({navis}) => {
     );
   }, [])
 
+  const getResume = () => {
+    const url = "https://drive.google.com/file/d/17MzSqxqFiS1tXt2j1E7wraS8Or86o5ci/view?usp=sharing"
+    window.open(url, "_blank");
+  }
+
   return (
     <div className='Col-2'>
        <div className="content">
-        <button className={`resume-btn ${navis ? "resume-btn-hide" : "resume-btn-show"}`}>RESUME</button>
+        <button onClick={getResume} className={`resume-btn ${navis ? "resume-btn-hide" : "resume-btn-show"}`}>RESUME</button>
         <AniText
         text = {text}
         />
