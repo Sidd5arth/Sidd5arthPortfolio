@@ -16,7 +16,7 @@ const MainPage = ({navis}) => {
   }, [])
 
   const getResume = () => {
-    const url = "https://drive.google.com/file/d/17MzSqxqFiS1tXt2j1E7wraS8Or86o5ci/view?usp=sharing"
+    const url = "https://drive.google.com/file/d/1aUdhCBM7L4w3KNX6ATi0odXKyQrfKE9P/view?usp=sharing"
     window.open(url, "_blank");
   }
 
