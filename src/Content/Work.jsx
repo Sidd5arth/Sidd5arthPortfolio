@@ -34,9 +34,9 @@ const Work = () => {
   }
   let p2 = {
     id:1,
-    title: "Get SEO Data",
+    title: "Forky",
     date: "Live application -> ",
-    link:"https://get-se-ostats.vercel.app/",
+    link:"https://create-recipe-app-kohl.vercel.app",
      tech: [
       {name:"react.js", img:<ReactIcon className='svgIcon'/>},
       {name:"node.js", img: <NodeIcon className='svgIcon'/>},
